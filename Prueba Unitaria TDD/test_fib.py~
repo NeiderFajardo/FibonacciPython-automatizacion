@@ -1,0 +1,17 @@
+import unittest
+
+class TestFibonacci(unittest.TestCase):
+
+    def test_valor_inicial(self):
+        self.assertEquals(0, self.fib.numero)
+
+    def setUp(self):
+        self.fib = Fibonacci()
+
+    def test_serie_fibonacci(self):
+        self.fib.serie(10)
+
+class Fibonacci:
+    def __init__(self):
+        self.numero = 0
+

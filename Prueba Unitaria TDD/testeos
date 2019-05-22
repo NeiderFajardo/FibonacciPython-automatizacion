@@ -1,0 +1,81 @@
+ 
+Testeo 1:
+
+======================================================================
+ERROR: test_valor_inicial (test_fib.TestFibonacci)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/cristianc4/Documentos/Universidad/Gestion Tecnologica/EjemploPython/test_fib.py", line 6, in test_valor_inicial
+    fib = Fibonacci()
+NameError: name 'Fibonacci' is not defined
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+
+
+Testeo 2:
+======================================================================
+ERROR: test_valor_inicial (test_fib.TestFibonacci)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/cristianc4/Documentos/Universidad/Gestion Tecnologica/EjemploPython/test_fib.py", line 7, in test_valor_inicial
+    self.assertEquals(0, fib.a)
+    self.assertEquals(1, fib.b)
+AttributeError: 'Fibonacci' object has no attribute 'a'
+AttributeError: 'Fibonacci' object has no attribute 'b'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+
+Testeo 3:
+ .
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+
+Testeo 4:
+
+======================================================================
+ERROR: test_valor_inicial (test_fib.TestFibonacci)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/cristianc4/Documentos/Universidad/Gestion Tecnologica/EjemploPython/test_fib.py", line 6, in test_valor_inicial
+    self.assertEquals(0, fib.a)
+NameError: name 'fib' is not defined
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+
+
+Testeo 5:
+
+======================================================================
+ERROR: test_serie_fibonacci (test_fib.TestFibonacci)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/cristianc4/Documentos/Universidad/Gestion Tecnologica/EjemploPython/test_fib.py", line 12, in test_serie_fibonacci
+    self.fib.serie(10)
+AttributeError: 'Fibonacci' object has no attribute 'serie'
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+FAILED (errors=1)
+
+
+Testeo 6: Final
+
+./home/cristianc4/Documentos/Universidad/Gestion Tecnologica/EjemploPython/test_fib.py:6: DeprecationWarning: Please use assertEqual instead.
+  self.assertEquals(0, self.fib.a)
+.
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK
